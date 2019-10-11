@@ -24,7 +24,8 @@ public class CharacterLab {
             ch.setmName("my name num is "+ i);
             ch.setmNickName("my nickname is " + i);
             ch.setmProgramName("节目" + i);
-            ch.setmProgramPicId(i);
+            ch.setmProgramPicId(R.drawable.tmntdon);
+            mCharacters.add(ch);
         }
     }
 

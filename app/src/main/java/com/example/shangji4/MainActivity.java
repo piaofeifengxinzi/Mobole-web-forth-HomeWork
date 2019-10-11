@@ -17,6 +17,7 @@ public abstract class MainActivity extends FragmentActivity {
        super.onCreate(savedInstanceState);
        setContentView(R.layout.activity_main);
        mediaPlayer = MediaPlayer.create(MainActivity.this,R.raw.tmnt_theme);
+       System.out.println("这屋里执行");
        FragmentManager fm = getSupportFragmentManager();
        Fragment fragment = fm.findFragmentById(R.id.fragment_container);
 
@@ -46,6 +47,7 @@ public abstract class MainActivity extends FragmentActivity {
     @Override
     public void onDestroy(){
         super.onDestroy();
+        System.out.println("销毁");
         mediaPlayer.release();
     }
 }

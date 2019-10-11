@@ -2,6 +2,8 @@ package com.example.shangji4;
 
 import java.util.UUID;
 
+
+//model
 public class Character {
     public UUID getmId() {
         return mId;
