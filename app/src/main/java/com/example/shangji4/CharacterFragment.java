@@ -30,6 +30,7 @@ public class CharacterFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstance){
         super.onCreate(savedInstance);
+        //这里将传过来的数据接收，可以用其他更好的方法
         UUID id = (UUID)getActivity().getIntent().getSerializableExtra(CharacterListActivity.IntentID);
         mCharacter = CharacterLab.get(getActivity()).getCharacter(id);
     }
@@ -37,6 +38,7 @@ public class CharacterFragment extends Fragment {
     @Override
     public void onActivityCreated(Bundle bundle){
         super.onActivityCreated(bundle);
+        //设置数据显示在控件上
         title.setText(mCharacter.getmName());
         name.setText(mCharacter.getmNickName());
         picture.setImageResource(mCharacter.getmProgramPicId());

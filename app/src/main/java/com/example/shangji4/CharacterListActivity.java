@@ -11,10 +11,13 @@ public class CharacterListActivity extends MainActivity {
 
     //全局静态量
     public static final String IntentID = "com.example.shangji4.intentid";
+
+    //重写fragment用于父类中的fragment对象
     @Override
     protected Fragment createFragment() {
         return new CharacterListFragment();
     }
+
 
     public static Intent newIntent(Context packageContext, UUID id){
         Intent intent = new Intent(packageContext, CharacterActivity.class);

@@ -3,7 +3,7 @@ package com.example.shangji4;
 import java.util.UUID;
 
 
-//model
+//这个类是用来存储模型的数据的，主要是get和set函数
 public class Character {
     public UUID getmId() {
         return mId;
@@ -56,6 +56,7 @@ public class Character {
     private int mProgramPicId;
     private String mProgramName;
 
+    //构造函数是在生成对象时生成唯一的标识符
     public Character(){
         this.mId = UUID.randomUUID();
     }
